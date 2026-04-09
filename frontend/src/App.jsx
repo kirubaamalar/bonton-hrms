@@ -5,6 +5,7 @@ import Layout from './components/Layout/Layout';
 import Login from './pages/Login/Login';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Employees from './pages/Employees/Employees';
+import EmployeeForm from './pages/Employees/EmployeeForm';
 import Attendance from './pages/Attendance/Attendance';
 import Leave from './pages/Leave/Leave';
 import Payroll from './pages/Payroll/Payroll';
@@ -44,6 +45,14 @@ const App = () => {
             element={
               <ProtectedRoute>
                 <Layout><Employees /></Layout>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/employees/add"
+            element={
+              <ProtectedRoute>
+                <Layout><EmployeeForm /></Layout>
               </ProtectedRoute>
             }
           />

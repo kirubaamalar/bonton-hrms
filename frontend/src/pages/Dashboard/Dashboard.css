@@ -157,7 +157,7 @@
 }
 
 .activity-avatar.a1 {
-  background: linear-gradient(135deg, #f59e0b, #d97706);
+  background: linear-gradient(135deg, #fc9200, #e08300);
 }
 .activity-avatar.a2 {
   background: linear-gradient(135deg, #3b82f6, #2563eb);
@@ -252,8 +252,8 @@
 }
 
 .quick-action-icon.green {
-  background: rgba(16, 185, 129, 0.1);
-  color: var(--success);
+  background: rgba(252, 146, 0, 0.1);
+  color: #fc9200;
 }
 
 .quick-action-icon.blue {

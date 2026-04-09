@@ -27,7 +27,7 @@
 }
 
 .stat-card.green::before {
-  background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+  background: linear-gradient(90deg, #fc9200 0%, #ffb340 100%);
 }
 
 .stat-card.blue::before {
@@ -101,8 +101,8 @@
 }
 
 .stat-card-icon.green {
-  background: rgba(16, 185, 129, 0.1);
-  color: var(--success);
+  background: rgba(252, 146, 0, 0.1);
+  color: #fc9200;
 }
 
 .stat-card-icon.blue {

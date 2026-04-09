@@ -6,11 +6,11 @@
 
 /* ── CSS Custom Properties ── */
 :root {
-  /* Primary palette */
-  --primary: #10b981;
-  --primary-light: #34d399;
-  --primary-dark: #059669;
-  --primary-glow: rgba(16, 185, 129, 0.15);
+  /* Primary palette — BonTon Orange */
+  --primary: #fc9200;
+  --primary-light: #ffb340;
+  --primary-dark: #e08300;
+  --primary-glow: rgba(252, 146, 0, 0.15);
 
   /* Accent */
   --accent: #6366f1;
@@ -22,14 +22,14 @@
   --bg-card: #ffffff;
   --bg-sidebar: #0f172a;
   --bg-sidebar-hover: #1e293b;
-  --bg-sidebar-active: rgba(16, 185, 129, 0.12);
+  --bg-sidebar-active: rgba(252, 146, 0, 0.12);
 
   /* Text */
   --text-primary: #0f172a;
   --text-secondary: #64748b;
   --text-muted: #94a3b8;
   --text-sidebar: #94a3b8;
-  --text-sidebar-active: #10b981;
+  --text-sidebar-active: #fc9200;
   --text-white: #ffffff;
 
   /* Borders */
@@ -60,7 +60,7 @@
   --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Status colors */
-  --success: #10b981;
+  --success: #22c55e;
   --warning: #f59e0b;
   --danger: #ef4444;
   --info: #3b82f6;

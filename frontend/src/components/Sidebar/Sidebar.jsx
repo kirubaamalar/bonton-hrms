@@ -10,8 +10,8 @@ import {
   HiOutlineQuestionMarkCircle,
   HiOutlineArrowRightOnRectangle,
 } from 'react-icons/hi2';
-import { RiLeafLine } from 'react-icons/ri';
 import { TbBeach } from 'react-icons/tb';
+import bontonLogo from '../../assets/BonTon Softwares logo on dark backdrop.png';
 import './Sidebar.css';
 
 const menuItems = [
@@ -54,12 +54,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
         {/* Logo */}
         <div className="sidebar-logo">
-          <div className="sidebar-logo-icon">
-            <RiLeafLine />
-          </div>
-          <div className="sidebar-logo-text">
-            Bonton <span>HRMS</span>
-          </div>
+          <img src={bontonLogo} alt="BonTon Softwares" className="sidebar-logo-img" />
         </div>
 
         {/* Menu */}

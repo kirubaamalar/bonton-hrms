@@ -3,7 +3,7 @@ import { useNavigate, Navigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { HiOutlineEye, HiOutlineEyeSlash } from 'react-icons/hi2';
 import { HiOutlineExclamationCircle } from 'react-icons/hi2';
-import { RiLeafLine } from 'react-icons/ri';
+import bontonLogo from '../../assets/bonton-logo.png';
 import './Login.css';
 
 const Login = () => {
@@ -19,7 +19,6 @@ const Login = () => {
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  // If already authenticated, redirect to dashboard
   if (isAuthenticated) {
     return <Navigate to="/dashboard" replace />;
   }
@@ -60,7 +59,7 @@ const Login = () => {
 
         <div className="login-left-content">
           <div className="login-left-label">
-            Bonton HRMS
+            BonTon Softwares
           </div>
           <h1 className="login-left-title">
             Manage Your<br />
@@ -78,12 +77,7 @@ const Login = () => {
         <div className="login-form-wrapper">
           {/* Logo */}
           <div className="login-logo">
-            <div className="login-logo-icon">
-              <RiLeafLine />
-            </div>
-            <div className="login-logo-text">
-              Bonton <span>HRMS</span>
-            </div>
+            <img src={bontonLogo} alt="BonTon Softwares" className="login-logo-img" />
           </div>
 
           {/* Heading */}

@@ -24,11 +24,11 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 20% 50%, rgba(139, 92, 246, 0.6) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 30%, rgba(236, 72, 153, 0.5) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 80%, rgba(59, 130, 246, 0.5) 0%, transparent 50%),
-    radial-gradient(ellipse at 30% 20%, rgba(16, 185, 129, 0.3) 0%, transparent 40%),
-    linear-gradient(135deg, #0c0a1a 0%, #1a0a2e 30%, #0a1628 60%, #0a0a0a 100%);
+    radial-gradient(ellipse at 20% 50%, rgba(252, 146, 0, 0.6) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 30%, rgba(252, 100, 0, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(200, 80, 0, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse at 30% 20%, rgba(255, 179, 64, 0.3) 0%, transparent 40%),
+    linear-gradient(135deg, #1a0a00 0%, #2a1500 30%, #1a1000 60%, #0a0a0a 100%);
   z-index: 0;
 }
 
@@ -74,7 +74,7 @@
   font-weight: 800;
   line-height: 1.15;
   margin-bottom: 20px;
-  background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 50%, #c4b5fd 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #ffe0b2 50%, #fc9200 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -99,7 +99,7 @@
   height: 300px;
   top: -80px;
   right: -60px;
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(252, 146, 0, 0.15) 0%, transparent 70%);
   animation: float 8s ease-in-out infinite;
 }
 
@@ -108,7 +108,7 @@
   height: 200px;
   top: 40%;
   left: -40px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 179, 64, 0.12) 0%, transparent 70%);
   animation: float 6s ease-in-out infinite reverse;
 }
 
@@ -117,9 +117,11 @@
   height: 150px;
   bottom: 20%;
   right: 20%;
-  background: radial-gradient(circle, rgba(236, 72, 153, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(252, 100, 0, 0.1) 0%, transparent 70%);
   animation: float 10s ease-in-out infinite;
 }
+
+
 
 @keyframes float {
   0%, 100% { transform: translateY(0) rotate(0deg); }
@@ -146,30 +148,13 @@
 .login-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   margin-bottom: 48px;
 }
 
-.login-logo-icon {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.2rem;
-}
-
-.login-logo-text {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--text-primary);
-}
-
-.login-logo-text span {
-  color: var(--primary);
+.login-logo-img {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
 }
 
 .login-heading {
@@ -283,7 +268,7 @@
 .login-btn {
   width: 100%;
   padding: 14px;
-  background: var(--text-primary);
+  background: #fc9200;
   color: var(--text-white);
   font-size: 0.95rem;
   font-weight: 600;
@@ -294,7 +279,7 @@
 }
 
 .login-btn:hover {
-  background: #1e293b;
+  background: #e08300;
   transform: translateY(-1px);
   box-shadow: var(--shadow-lg);
 }
