@@ -17,7 +17,10 @@ def create_app():
     db.init_app(app)
     jwt.init_app(app)
     bcrypt.init_app(app)
-    CORS(app, origins=["http://localhost:5173", "https://*.vercel.app"], supports_credentials=True)
+    CORS(app, origins=[
+    "http://localhost:5173",
+    "http://192.168.1.40:5173"  # 🔥 ADD THIS
+], supports_credentials=True)
 
     # Register routes
     from app.routes.auth import auth_bp

@@ -20,7 +20,7 @@ const menuItems = [
     items: [
       { name: 'Dashboard', icon: HiOutlineSquares2X2, path: '/dashboard' },
       { name: 'Employees', icon: HiOutlineUsers, path: '/employees' },
-      { name: 'Attendance', icon: HiOutlineClipboardDocumentCheck, path: '/attendance' },
+      { name: 'Assets', icon: HiOutlineClipboardDocumentCheck, path: '/attendance' },
       { name: 'Leave', icon: TbBeach, path: '/leave' },
       { name: 'Payroll', icon: HiOutlineBanknotes, path: '/payroll' },
       { name: 'Calendar', icon: HiOutlineCalendarDays, path: '/calendar' },
